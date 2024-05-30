@@ -1,38 +1,16 @@
 # QuantumServeCloud
 
-#### 介绍
-QuantumServeCloud量子服务云
 
+#### 项目简介：
+本项目是基于One Thread One Loop式主从Reactor模型，实现的高并发服务器，通过这个服务器组件，用户可以根据需要扩
+展和定制服务器组件，快速搭建一个高性能服务器， 使其适应各种复杂的业务场景。
 
-#### 软件架构
-软件架构说明
+#### 个人职责：
+实现用户级缓冲区，用于实现通信中的接收缓冲区和发送缓冲区的功能，保证数据接收和发送的效率。
+设计和实现Connection模块，封装Buffer、Socket和Channel模块，实现对通信套接字的管理。
+通过Acceptor模块，实现对监听套接字的管理，确保用户连接的稳定性。
+通过定时器队列模块，实现固定时间定时任务的管理，包括对非活跃连接的释放。
+实现每个线程都运行一个事件循环，每个线程都可以独立地处理事件，避免了锁竞争和资源争用。
 
+#### 应用技术： C/C++、Linux系统/网络编程、Vim、g++、gdb、git、MakeFile。
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
